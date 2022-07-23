@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Dist/css/main.css">
+    <link rel="stylesheet" href="">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 48;
+                justify-self: right;
+                align-self: center;
+                position: relative;
+                top: 75px;
+                right: 62px;
+        }
+        
+    </style>
+    <title>CharterAutos</title>
+</head>
+
+<body>
+    <header class="nav">
+        <nav class="navbar">
+            <a href="./index.html" class='logo'>CharterAutos</a>
+            <ul class="nav_menu">
+                <li><a href="./index.html"</a>Home</li>
+                <li> <a href="./Vehicles.html" class="active">Vehicles</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main_content">
+        <div class="main_table">
+            <header class="table_heading">
+                <h3 class="page_title">Vehicles</h3>
+                <a class="action-btn" id="addnewcar">Add New Vehicle</a>
+            </header>
+            <div class="searchbox">
+                <i class="material-symbols-outlined">Search</i>
+                <input type="search" name="search_title" id="search_title" placeholder="Search Vehicles">
+                <!--<span class="material-symbols-outlined">
+                    search
+                    </span>-->
+            </div>
+            <table class="tabular">
+                <tbody>
+                    <tr class="header_tr">
+                        <th></th>
+                        <th>Make</th>
+                        <th>Model</th>
+                        <th>Year</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr class="body_tr">
+                        <td class="body_tr_edit"><a href="https://carbuzz.com/cars/audi/a6/2021">Edit</a></td>
+                        <td>Audi</td>
+                        <td>A6</td>
+                        <td>2021</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr class="body_tr">
+                        <td class="body_tr_edit"><a href="#">Edit</a></td>
+                        <td>Hyundai</td>
+                        <td>Tuscon</td>
+                        <td>2022</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr class="body_tr">
+                        <td class="body_tr_edit"><a href="#">Edit</a></td>
+                        <td>Volkswagen</td>
+                        <td>Tiguan</td>
+                        <td>2020</td>
+                        <td>Booked</td>
+                    </tr>
+                    <tr class="body_tr">
+                        <td class="body_tr_edit"><a href="#" target="_blank">Edit</a>
+                        </td>
+                        <td>Mercedes-Benz</td>
+                        <td>A 200</td>
+                        <td>2019</td>
+                        <td><select>
+                            <option value="Booked">Booked</option>
+                            <option value="Available">Available</option>
+                        </select></td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+
+        <!--Create new vehicle-->
+
+        <div id="newcar" class="newcar">
+            <header class="newcar-heading">
+                <h3 class="cnv-page-title">Create New Vehicle</h3>
+                <a class="action-btn close" id="close" href="#">Close</a>
+            </header>
+              <section class="form">
+                   <form class ="actualform">
+                      <!--<label for="make">Make:</label>-->
+                      <input class="name" type="text" name="make" placeholder="Make"><br>
+                      <!--<label for="model">Model:</label>-->
+                      <input class="model" type="text" name="model" placeholder="Model"><br>
+                      <!--<label for="year">Year:</label>-->
+                      <input class="year" type="text" name="year" placeholder="Year"><br>
+                      
+                     
+                      <!--<legend>Vehicle Availability</legend>-->
+                      <input type="radio" id="status" name="availability" value="">
+                       <label for="contactChoice1">Available</label>
+                      
+                      <input type="radio" id="status" name="availability" value="">
+                       <label for="contactChoice1">Booked</label>
+                      <!--<select class="status" name="status">
+                          <option>Available</option>
+                          <option>Booked</option>
+                      </select>-->
+                   
+                      
+                   </form>
+                </section>
+                <div class="buttons">
+                  <a class="action-btn save"  href="#">Save</a>
+                   <a class="action-btn delete"  href="#">Delete</a>
+                </div> 
+
+        </div>
+    </main>
+    <script defer src="./js/main.js"></script>
+
+</body>
+
+</html>

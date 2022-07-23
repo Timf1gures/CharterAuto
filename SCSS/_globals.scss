@@ -1,0 +1,67 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: rgb(232, 232, 232);
+}
+
+body {
+  margin: 0;
+}
+
+H1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 1.1;
+  font-weight: 700;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  margin-top: 0;
+  line-height: 1.1;
+}
+
+.main_content {
+  display: grid;
+  margin-top: 130px;
+  justify-content: center;
+  width: 100%;
+  grid-template: 1fr / repeat(3, 1000px);
+}
+
+.nav_menu a.active {
+  color: rgb(0, 191, 255);
+  border-bottom: 2px solid;
+  padding-bottom: 5px;
+}
+
+.action-btn {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+  border-radius: 30px;
+  padding: 6.5px 13px;
+  font-size: 13px;
+  &:hover {
+      color: rgb(0,191,255);
+      cursor: pointer;
+
+  }
+  &:active {
+      color: rgb(0, 128, 255);
+  }
+
+  &.close {
+      margin-right: 30px;
+       
+      &:hover {
+        color: rgb(249, 71, 71);
+       };
+       
+        
+  }
+       
+}
